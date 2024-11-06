@@ -2,13 +2,13 @@
 
 ## Full Stack abierto
 
-### Parte 0 - Fundamentos de las aplicaciones web
+### [Parte 0 - Fundamentos de las aplicaciones web](https://fullstackopen.com/es/part0)
 ---
 a. Información general
 
 b. Fundamentos de las aplicaciones web
 
-### Parte 1 - Introducción a React
+### [Parte 1 - Introducción a React](https://fullstackopen.com/es/part1)
 ---
 a. Introducción a React
 
