@@ -23,6 +23,10 @@ const App = () => {
       : null
   }
 
+  const total = good + neutral + bad
+  const average = total > 0 ? (good - bad) / total : 0
+  const percentage = total > 0 ? (good / total) * 100 : 0
+
   return (
     <div>
       <h1>give feedback</h1>
@@ -34,6 +38,9 @@ const App = () => {
       <Display value={good} text='good' />
       <Display value={neutral} text='neutral' />
       <Display value={bad} text='bad' />
+      <Display value={total} text='all' />
+      <Display value={average} text='average' />
+      <Display value={percentage} text='positive' />
     </div>
   )
 }
