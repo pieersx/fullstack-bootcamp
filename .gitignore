@@ -7,3 +7,5 @@ part1/*
 !part1/anecdotes
 
 # part2
+part2/*
+!part2/courseinfo
