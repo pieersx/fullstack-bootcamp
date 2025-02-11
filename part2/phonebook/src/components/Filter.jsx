@@ -2,7 +2,11 @@ export const Filter = ({ searchTerm, handleSearchChange }) => {
   return (
     <div>
       filter shown with:{' '}
-      <input value={searchTerm} onChange={handleSearchChange} />
+      <input
+        type='text'
+        value={searchTerm}
+        onChange={(e) => handleSearchChange(e.target.value)}
+      />
     </div>
   )
 }

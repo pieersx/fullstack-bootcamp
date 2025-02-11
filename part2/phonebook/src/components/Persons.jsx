@@ -1,12 +1,12 @@
 import { Person } from './Person'
 
-export const Persons = ({ persons }) => (
+export const Persons = ({ persons, handleDeletePerson }) => (
   <ul>
     {persons.map((person) => (
       <Person
         key={person.id}
-        name={person.name}
-        number={person.number}
+        person={person}
+        handleDeletePerson={handleDeletePerson}
       />
     ))}
   </ul>

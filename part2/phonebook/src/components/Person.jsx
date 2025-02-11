@@ -1,7 +1,10 @@
-export const Person = ({ name, number }) => {
+export const Person = ({ person, handleDeletePerson }) => {
   return (
     <li>
-      {name} {number}
+      {person.name} {person.number}{' '}
+      <button onClick={() => handleDeletePerson(person.id, person.name)}>
+        deleted
+      </button>
     </li>
   )
 }

@@ -9,10 +9,20 @@ export const PersonForm = ({
     <div>
       <form onSubmit={addPerson}>
         <div>
-          name: <input value={name} onChange={handleNameChange} />
+          name:{' '}
+          <input
+            type='text'
+            value={name}
+            onChange={(e) => handleNameChange(e.target.value)}
+          />
         </div>
         <div>
-          number: <input value={number} onChange={handleNumberChange} />
+          number:{' '}
+          <input
+            type='text'
+            value={number}
+            onChange={(e) => handleNumberChange(e.target.value)}
+          />
         </div>
         <div>
           <button type='submit'>add</button>
